@@ -1,0 +1,20 @@
+[package]
+name = "comgrabe"
+description = "A simple way to access doc comments from your Rust code"
+keywords = ["proc-macro", "docs"]
+categories = ["accessibility"]
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/pacak/comgrabe"
+
+
+[lib]
+name = "comgrabe"
+proc-macro = true
+
+
+[dependencies]
+proc-macro2 = "1.0.43"
+quote = "1.0.21"
+syn = { version = "1.0.99" }
